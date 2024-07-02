@@ -72,13 +72,22 @@ WSGI_APPLICATION = 'bookapp.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+# }
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
+   'default':  dj_database_url.parse('postgresql://social_9snp_user:VEWXRvN86pIUAivK34wbPTGYvenlYH29@dpg-cq13j93v2p9s73clgncg-a.oregon-postgres.render.com/social_9snp')
+    #    {
+    #     'ENGINE': 'django.db.backends.postgresql',
+    #     'NAME': 'socialmedia',
+    #     'USER': 'postgres',
+    #     'PASSWORD':'1234',
+    #     'HOST':'localhost'
+    #    }
 }
-
 
 
 # Password validation
