@@ -79,7 +79,7 @@ WSGI_APPLICATION = 'bookapp.wsgi.application'
 #     }
 # }
 DATABASES = {
-   'default':  dj_database_url.parse('postgresql://social_9snp_user:VEWXRvN86pIUAivK34wbPTGYvenlYH29@dpg-cq13j93v2p9s73clgncg-a.oregon-postgres.render.com/social_9snp')
+   'default':  dj_database_url.parse('postgresql://testdb_af34_user:1M9NjU8MyBm0vEHmFNctQmD8kb679qam@dpg-cq21guaju9rs73bh41b0-a.oregon-postgres.render.com/testdb_af34')
     #    {
     #     'ENGINE': 'django.db.backends.postgresql',
     #     'NAME': 'socialmedia',
